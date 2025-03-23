@@ -1,0 +1,47 @@
+.shadow{
+     color: black;
+     text-shadow: 
+       5px 5px 0 red,
+       7px 7px 0 blue,
+       9px 9px 0 purple;
+       font: 10em sans-serif;
+}
+.one{
+    text-transform: uppercase;
+}
+.two{
+    text-transform: capitalize;
+}
+.three{
+    text-transform: lowercase;
+
+}
+.one,
+.two,
+.three{
+    font: 5em sans-serif;
+}
+.break{
+    width: 400px;
+    background-color: #ddd;
+    padding: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+a{
+    background-color: rgb(29, 121, 29);
+    color: white;
+    text-decoration:none ;
+    padding: 10px ;
+    display: inline block;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 40px;
+    border-color: rgb(30, 83, 30);
+    border-style: solid;
+    border-width:0  0 10px 0;
+}
+.link{
+    text-align: center;
+}
