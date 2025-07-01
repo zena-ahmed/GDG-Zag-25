@@ -1,0 +1,85 @@
+
+.box1{
+    width: 300px;
+    height: 60px; 
+    background-color: rgba(211, 225, 231, 0.922);
+     /* align-items: center;  */
+     justify-content: center;
+    display: flex;
+    margin: 20px auto;   
+}
+.box2{
+    width: 300px;
+    height: 60px;
+    background-color: red;
+    /* align-items: center; */
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+}
+.box3{
+    width: 300px;
+    height: 60px;
+    background-color: rgba(211, 225, 231, 0.922);
+    justify-content: center;
+    display: flex;
+    margin: 20px auto; 
+}
+.two::first-letter{
+   display: inline-block;
+   background-color: red;
+   color: white;
+   font-size: 40px;
+   font-weight: bold; 
+   padding: 20px;
+   margin-right: 100%; 
+
+}
+.two{
+    width: 50%;
+    height: 80px;
+    background-color: rgba(211, 225, 231, 0.922);
+    justify-content: center;   
+}
+p[data-person] {
+    position: relative;
+    background-color: #eee;
+    padding: 20px 20px 20px 50px; 
+    margin: 20px auto;
+    font-size: 20px;
+    width: 80%;
+    box-sizing: border-box;
+    padding-left: 80px;
+  }
+  
+
+  p[data-person]::before {
+    content: attr(data-person);
+    position: absolute;
+    left: -120px;
+    top: 0;
+    height: 100%;
+    width: 100px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  p[data-person]::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 50%;
+     transform: translateY(-50%);  
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid deeppink;
+   
+  }
+  
