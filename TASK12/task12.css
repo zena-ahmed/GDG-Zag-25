@@ -1,0 +1,266 @@
+
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .page {
+    padding: 64px 0;
+  }
+  
+  #home, #about, #menu, #where {
+    display: block;
+    padding: 64px 0;
+  }
+  
+  .page-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  img {
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.16);
+  }
+  
+  .nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-item {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 4px;
+    display: block;
+  }
+  
+  .nav-toggle {
+    display: none;
+  }
+  
+  .nav-toggle-btn {
+    display: none;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  header {
+    background: url('./coffeehouse1.jpg') no-repeat center;
+    background-size: cover;
+    min-height: 75%;
+    position: relative;
+    filter: grayscale(50%);
+  }
+  
+  .header-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 48px;
+    color: #fff;
+  }
+  
+  .header-title {
+    font-size: 90px;
+    letter-spacing: 10px;
+    margin: 10px 0;
+    line-height: 1;
+  }
+  
+  .header-info {
+    margin: 15px 0;
+  }
+  
+  .header-hours {
+    background: #000;
+    padding: 5px 15px;
+    display: inline-block;
+  }
+  
+  .header-address {
+    margin-left: 15px;
+  }
+  
+ 
+  .section-title {
+    text-align: center;
+    letter-spacing: 5px;
+    margin: 10px 0;
+    font-size: 30px;
+  }
+  
+  .section-title span {
+    background: #fff;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+
+  .about-quote {
+    background: #f1f1f1;
+    border-left: 6px solid #ccc;
+    padding: 10px 15px;
+    margin: 20px 0;
+  }
+  
+  .about-image {
+    margin: 20px 0;
+    filter: grayscale(50%);
+  }
+  
+
+  .menu-tabs {
+    display: flex;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+  }
+  
+  .menu-tab {
+    flex: 1;
+    padding: 12px 0;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+  }
+  
+  .menu-tab.active {
+    background: #f1f1f1;
+  }
+  
+  .menu-section {
+    padding: 20px 0;
+  }
+  
+  .menu-section h3 {
+    margin: 20px 0 10px;
+  }
+  
+  .menu-description {
+    color: #757575;
+    margin: 0;
+  }
+  
+  .menu-image {
+    margin: 20px 0;
+    filter: grayscale(50%);
+  }
+  
+  /* Where Section */
+  .where-image {
+    margin: 20px 0;
+    filter: grayscale(50%);
+  }
+  
+  .where-highlight {
+    background: #000;
+    color: #fff;
+    padding: 0 5px;
+  }
+  
+  .where-form {
+    margin-top: 20px;
+  }
+  
+  .where-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    font-family: inherit;
+  }
+  
+  .where-form button {
+    background: #f1f1f1;
+    border: none;
+    padding: 12px 24px;
+    margin: 8px 0;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  
+  .where-form button:hover {
+    background: #ddd;
+  }
+  
+  /* Footer */
+  footer {
+    background: #f1f1f1;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  footer a {
+    color: #000;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header-title {
+      font-size: 60px;
+    }
+    
+    .nav-item {
+      display: none;
+    }
+    
+    .nav-toggle-btn {
+      display: block;
+      margin-left: auto;
+    }
+    
+    .nav-toggle:checked ~ .nav-item {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+    
+    .header-content {
+      padding: 16px;
+    }
+    
+    .section-title {
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header-title {
+      font-size: 40px;
+    }
+    
+    .header-info {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .header-address {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
